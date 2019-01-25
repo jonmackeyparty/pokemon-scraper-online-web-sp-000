@@ -4,8 +4,8 @@ class Pokemon
   def initialize(id:, name:, type:, db:)
     @id = id:
     @name = name:
-    @type = :
-    @db = db 
+    @type = type:
+    @db = db:
     @@all << self
   end
   
