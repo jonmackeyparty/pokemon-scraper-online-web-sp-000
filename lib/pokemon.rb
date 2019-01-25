@@ -19,6 +19,8 @@ class Pokemon
   end
   
   def self.find(id, db)
-    db.execute("SELECT (id) FROM pokemon")
+    a = db.execute("SELECT * FROM pokemon WHERE id = (id)", id)
+    self.save(a.name, a.type, a.db)
+  end
   
 end
