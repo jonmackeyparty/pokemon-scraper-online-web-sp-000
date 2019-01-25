@@ -1,8 +1,11 @@
 class Pokemon
-  def initialize(name, breed, age)
+  @@all = []
+  
+  def initialize(id, name, type, db)
+    @id = id
     @name = name
-    @breed = breed
-    @age = age
+    @type = type
+    @db = db 
     @@all << self
   end
 end
